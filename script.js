@@ -9,14 +9,14 @@ const store = {
         if(action.type == "ADD-TO-CART"){
             this.state.cart.push(action.payload)
         }
-        if(action.type == "ADD-TO-SHOP"){
-            this.state.shop.push(action.payload)
+        else if(action.type == "REMOVE-FROM-CART"){
+            this.state.cart.pop()
         }
     }
 }
 
 store.dispatch({ type: "ADD-TO-CART", payload: "Banana" })
 
-store.dispatch({ type: "ADD-TO-SHOP", payload: 3 })
+store.dispatch({ type: "REMOVE-FROM-CART" })
 
 console.log(store.getState())
