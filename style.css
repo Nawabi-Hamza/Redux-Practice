@@ -1,0 +1,17 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: teal;
+}
+body{
+    max-width: 1400px;
+    margin: auto;
+    padding: 10px;   
+    font-family: Arial;
+}
+h1{
+    color: white;
+}
